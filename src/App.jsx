@@ -7,14 +7,13 @@ import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio'
 function App() {
   return (
-    <div><h1>Hello World</h1></div>
-    // <Routes>
-    //   <Route path="/" Component={Home} />
-    //   <Route path="/about" Component={About} />
-    //   <Route path='/services' Component={Services} />
-    //   <Route path="/contact" Component={Contact} />
-    //   <Route path="/portfolio" Component={Portfolio} />
-    // </Routes>
+    <Routes>
+      <Route path="/" Component={Home} />
+      <Route path="/about" Component={About} />
+      <Route path='/services' Component={Services} />
+      <Route path="/contact" Component={Contact} />
+      <Route path="/portfolio" Component={Portfolio} />
+    </Routes>
   )
 }
 
