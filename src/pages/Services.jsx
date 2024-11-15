@@ -11,7 +11,12 @@ const Services = () => {
         <div className='w-full'>
           <div className="bg-white rounded-sm shadow-lg h-full flex items-center justify-center flex-col">
             <h1 className='text-4xl font-semibold name'>Services</h1>
-            <p className='mt-4'>Coming Soon......</p>
+            <div>
+              <h3>Web Development</h3>
+              <ul>
+                <li>HTML Websites</li>
+              </ul>
+            </div>
 
           </div>
         </div>
