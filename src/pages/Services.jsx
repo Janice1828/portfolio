@@ -1,6 +1,16 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
+import { CgWebsite } from "react-icons/cg";
+import { GoDotFill } from "react-icons/go";
+
 const Services = () => {
+  const availableServices = [
+    {
+      icon: CgWebsite,
+      title: "Web Development",
+      techUsing: ["NORMAL HTML, CSS & JAVASCRIPT", "FRONT-END FRAMEWORKS LIKE REACT, CHART, NEXT JS.", "PHP AND MYSQL"]
+    }
+  ]
   return (
     <div className=' w-11/12 m-auto'>
       <div className='grid grid-cols-[20%_4%_76%] pt-16'>
@@ -9,19 +19,30 @@ const Services = () => {
         </div>
         <div></div>
         <div className='w-full'>
-          <div className="bg-white rounded-sm shadow-lg h-full flex items-center justify-center flex-col">
-            <h1 className='text-4xl font-semibold name'>Services</h1>
-            <div>
-              <h3>Web Development</h3>
-              <ul>
-                <li>HTML Websites</li>
-              </ul>
+          <div className="bg-white rounded-sm shadow-lg h-full px-16 py-20 main-content-body">
+            <div className='border border-slate-200 p-8 relative'>
+              <h1 className='text-xl font-semibold absolute w-fit px-6 py-1' style={{ top: "-20px", background: "#efefef" }}>Available Services</h1>
+              <div className='aboutme-container'>
+                <div className='grid grid-cols-[50%_50%] gap-x-20 gap-y-4 mt-8'>
+                  {availableServices.map((service, key) => (
+                    <div key={key} className='border border-slate-200 p-8'>
+                      <service.icon className='text-4xl text-secondary' />
+                      <h4 className='text-xl py-3 font-semibold'>{service.title}</h4>
+                      <h3 className='text-lg mb-2 text-secondary'>Technology Using : </h3>
+                      {service.techUsing.map((tech) => (
+                        <p className='text-sm leading-8 text-secondary flex items-center gap-3'><GoDotFill /> {tech}</p>
+                      ))}
+                    </div>
+                  ))}
+                  <div></div>
+                </div>
+              </div>
             </div>
 
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 
