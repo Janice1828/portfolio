@@ -35,7 +35,7 @@ const Contact = () => {
                                 <h1 className='text-xl font-semibold absolute w-fit px-6 py-1' style={{ top: "-20px", background: "#efefef" }}>Get In Touch</h1>
                                 <div className="contact-container">
                                     <div className="p-4 mt-6 grid grid-cols-[33.33%_33.33%_33.33%]">
-                                        <div className='flex gap-4 justify-center items-center'>
+                                        <div className='flex gap-4 '>
                                             <FaLocationArrow className='text-3xl text-secondary' />
                                             <div>
                                                 <p className='text-secondary'>Address</p>
@@ -58,11 +58,11 @@ const Contact = () => {
                                         </div>
                                     </div>
                                     <div className="social-media-links">
-                                        <h2 className='font-semibold text-2xl mt-12 text-center'>Social Media Links : </h2>
+                                        <h2 className='font-semibold text-2xl mt-12'>Social Media Links : </h2>
                                         <div className="grid mt-8 grid-cols-[50%_50%]">
                                             {socialMedias.map((media, key) => (
                                                 <div key={key} className=''>
-                                                    <a href={media.link} className='flex flex-col items-center gap-y-2' target='_blank'>
+                                                    <a href={media.link} className='flex flex-col  gap-y-2' target='_blank'>
                                                         <media.icon className='text-3xl text-secondary' style={{ color: media.color }} />
                                                         <span className='font-semibold'>{media.name}</span></a>
                                                 </div>
