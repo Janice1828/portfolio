@@ -33,8 +33,13 @@ body {
   animation: ease-in-out;
 }
 .main-content-body {
-  height: 530px;
   overflow-y: scroll;
+  height: 370px;
+}
+@media screen and (min-width: 1024px) {
+  .main-content-body {
+    height: 530px;
+  }
 }
 .main-content-body::-webkit-scrollbar {
   display: none;
