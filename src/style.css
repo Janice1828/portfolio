@@ -34,11 +34,21 @@ body {
 }
 .main-content-body {
   overflow-y: scroll;
-  height: 370px;
+  height: 450px;
 }
 @media screen and (min-width: 1024px) {
   .main-content-body {
-    height: 530px;
+    height: 580px;
+  }
+}
+@media screen and (min-width: 1295px) {
+  .main-content-body {
+    height: 560px;
+  }
+}
+@media screen and (min-width: 1450px) {
+  .main-content-body {
+    height: 535px;
   }
 }
 .main-content-body::-webkit-scrollbar {

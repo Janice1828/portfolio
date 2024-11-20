@@ -9,7 +9,7 @@ const Home = () => {
                 <Header />
             </div>
             <div className=' w-11/12 m-auto'>
-                <div className='block lg:grid grid-cols-[20%_4%_76%] pt-8 md:pt-16'>
+                <div className='block lg:grid grid-cols-[20%_4%_76%] pt-8 lg:pt-10'>
                     <div className='hidden lg:block'>
                         <Sidebar />
                     </div>

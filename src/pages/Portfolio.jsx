@@ -33,7 +33,7 @@ const Portfolio = () => {
                 <Header />
             </div>
             <div className=' w-11/12 m-auto'>
-                <div className='lg:grid grid-cols-[20%_4%_76%] pt-8 lg:pt-16'>
+                <div className='lg:grid grid-cols-[20%_4%_76%] pt-8 lg:pt-10'>
                     <div className='hidden lg:block'>
                         <Sidebar />
                     </div>
@@ -42,7 +42,7 @@ const Portfolio = () => {
                         <div className="bg-white rounded-sm shadow-lg h-full px-2 lg:px-16 py-20 main-content-body">
                             <div className='border border-slate-200 p-4 lg:p-8 relative'>
                                 <h1 className='text-xl font-semibold absolute w-fit px-6 py-1' style={{ top: "-20px", background: "#efefef" }}>CREATIVE PORTFOLIO</h1>
-                                <div className="flex gap-0 lg:gap-8 pb-4 flex-wrap">
+                                <div className="flex gap-y-0 gap-x-8 lg:gap-8 pb-4 flex-wrap mt-2">
                                     <button className={portfolio == 'created' ? 'text-lg' : 'text-lg text-secondary'} onClick={() => setPortfolio("created")}>Created Projects</button>
                                     <button className={portfolio != 'created' ? 'text-lg' : 'text-lg  text-secondary'} onClick={() => setPortfolio("updated")}>Updated/Modified Projects</button>
                                 </div>

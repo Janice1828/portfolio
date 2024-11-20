@@ -62,7 +62,7 @@ const About = () => {
                 <Header />
             </div>
             <div className=' w-11/12 m-auto'>
-                <div className='block lg:grid grid-cols-[20%_4%_76%] pt-8 md:pt-16'>
+                <div className='block lg:grid grid-cols-[20%_4%_76%] pt-8 lg:pt-10'>
                     <div className='hidden lg:block'>
                         <Sidebar />
                     </div>
@@ -77,23 +77,23 @@ const About = () => {
                                     <br />
                                     <hr />
                                     <br />
-                                    <div className="md:grid grid-cols-[50%_50%] gap-y-4">
+                                    <div className="md:grid grid-cols-[50%_50%] gap-y-4 gap-x-3">
                                         <div className='md:grid grid-cols-[30%_70%]'>
                                             <p className="title">Name:</p><p className="title-data">Jenish Limbu</p>
                                         </div>
-                                        <div className='md:grid grid-cols-[30%_70%]'>
+                                        <div className='md:grid grid-cols-[30%_70%] my-2'>
                                             <p className="title">Email:</p><p className="title-data">jlimbu539@gmail.com</p>
                                         </div>
                                         <div className='md:grid grid-cols-[30%_70%]'>
                                             <p className="title">Address:</p><p className="title-data">Imadol, Lalitpur, Nepal</p>
                                         </div>
-                                        <div className='md:grid grid-cols-[30%_70%]'>
+                                        <div className='md:grid grid-cols-[30%_70%]  my-2'>
                                             <p className="title">Phone :</p><p className="title-data">+977 9745303753</p>
                                         </div>
-                                        <div className='md:grid grid-cols-[30%_70%]'>
+                                        <div className='md:grid grid-cols-[30%_70%]' style={{ overflow: "hidden", textOverflow: "ellipsis" }}>
                                             <p className="title">Github :</p><p className="title-data"><a target='_blank' href="https://github.com/janice1828/">https://github.com/janice1828/</a></p>
                                         </div>
-                                        <div className='md:grid grid-cols-[30%_70%]'>
+                                        <div className='md:grid grid-cols-[30%_70%] mt-2' style={{ overflow: "hidden", textOverflow: "ellipsis" }}>
                                             <p className="title">Linkedin :</p><p className="title-data"><a href="https://www.linkedin.com/in/jenish-limbu-23b054246/" target='_blank'>https://www.linkedin.com/in/jenish-limbu-23b054246/</a></p>
                                         </div>
                                     </div>

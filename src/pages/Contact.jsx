@@ -28,7 +28,7 @@ const Contact = () => {
                 <Header />
             </div>
             <div className=' w-11/12 m-auto'>
-                <div className='lg:grid grid-cols-[20%_4%_76%] pt-16'>
+                <div className='lg:grid grid-cols-[20%_4%_76%] pt-8 lg:pt-10'>
                     <div className='hidden lg:block'>
                         <Sidebar />
                     </div>
@@ -64,7 +64,7 @@ const Contact = () => {
                                         </div>
                                         <div className="social-media-links  p-2">
                                             <h2 className='font-semibold text-xl mt-12'>Social Media Links : </h2>
-                                            <div className="grid mt-8 gap-y-4 sm:grid-cols-[50%_50%]">
+                                            <div className="grid mt-2 lg:mt-8 gap-y-4 sm:grid-cols-[50%_50%]">
                                                 {socialMedias.map((media, key) => (
                                                     <div key={key} className=''>
                                                         <a href={media.link} className='flex flex-col  gap-y-2' target='_blank'>
