@@ -8,6 +8,7 @@ const Created = ({ createdProjectLists }) => {
                 <div key={key} className='border border-slate-200 p-4'>
                     <a href={project.link} target='_blank'>
                         <img src={project.img} alt="" style={{ height: "200px", width: "100%", objectFit: "cover" }} />
+                        <span className='text-sm mt-2 block'>{project.Note.length >= 1 ? `Note : ${project.Note}` : ''}</span>
                     </a>
                 </div>
             ))}

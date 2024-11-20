@@ -7,25 +7,52 @@ import { useState } from 'react';
 import BHSuppliers from "../assets/bh-suppliers.png";
 import Himalayanhills from "../assets/himalayanhills-logo.png"
 import Header from '../components/Header';
+import meroKrishi from "../assets/merokrishi.png"
+import Possystem from "../assets/possystem.png"
+import Lawnella from "../assets/lawnella.jpg"
+import Instagram from "../assets/instagram.webp"
 const Portfolio = () => {
     const [portfolio, setPortfolio] = useState("created");
     const createdProjectsLists = [
         {
             title: "Car Rental",
             img: CarRental,
-            link: "https://car-rental-ten-lovat.vercel.app/"
+            link: "https://car-rental-ten-lovat.vercel.app/",
+            Note: ""
         },
         {
             title: "BH Suppliers",
             img: BHSuppliers,
-            link: "https://bhsuppliers.vercel.app/"
+            link: "https://bhsuppliers.vercel.app/",
+            Note: ""
+
+        },
+        {
+            title: "POS System",
+            img: Possystem,
+            link: "https://janice1828.github.io/pos-system/Dashboard/setup/system-setup.html"
+            , Note: ""
+        },
+        {
+            title: "Lawnella",
+            img: Lawnella,
+            link: "https://lawnella-git-main-jlimbu539gmailcoms-projects.vercel.app/"
+            ,
+            Note: "Not Responsive"
+        },
+        {
+            title: "Instagram Clone",
+            img: Instagram,
+            link: "https://instagram-clone-wine-nine.vercel.app/index.html/"
+            ,
+            Note: "Not Responsive"
         }
     ]
     const updatedProjectsLists = [
         {
             title: "Himalayan Hills",
-            img: Himalayanhills,
-            link: "https://himalayanhills.com.np/"
+            img: meroKrishi,
+            link: "https://merokrishi.com/"
         }]
     return (
         <>
@@ -44,7 +71,7 @@ const Portfolio = () => {
                                 <h1 className='text-xl font-semibold absolute w-fit px-6 py-1' style={{ top: "-20px", background: "#efefef" }}>CREATIVE PORTFOLIO</h1>
                                 <div className="flex gap-y-0 gap-x-8 lg:gap-8 pb-4 flex-wrap mt-2">
                                     <button className={portfolio == 'created' ? 'text-lg' : 'text-lg text-secondary'} onClick={() => setPortfolio("created")}>Created Projects</button>
-                                    <button className={portfolio != 'created' ? 'text-lg' : 'text-lg  text-secondary'} onClick={() => setPortfolio("updated")}>Updated/Modified Projects</button>
+                                    <button className={portfolio != 'created' ? 'text-lg' : 'text-lg  text-secondary'} onClick={() => setPortfolio("updated")}>Contributed Projects</button>
                                 </div>
                                 <div>
                                     <div className={portfolio == 'created' ? 'block' : 'hidden'}>
