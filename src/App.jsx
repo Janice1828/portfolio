@@ -7,7 +7,7 @@ import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio'
 function App() {
   return (
-    <Routes>
+    <Routes basename="/portfolio">
       <Route path="/" Component={Home} />
       <Route path="/about" Component={About} />
       <Route path='/services' Component={Services} />
