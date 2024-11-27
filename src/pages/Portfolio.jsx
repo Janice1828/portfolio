@@ -11,6 +11,7 @@ import meroKrishi from "../assets/merokrishi.png"
 import Possystem from "../assets/possystem.png"
 import Lawnella from "../assets/lawnella.jpg"
 import Instagram from "../assets/instagram.webp"
+import Dursikshya from "../assets/Dursikshya.png"
 const Portfolio = () => {
     const [portfolio, setPortfolio] = useState("created");
     const createdProjectsLists = [
@@ -50,10 +51,18 @@ const Portfolio = () => {
     ]
     const updatedProjectsLists = [
         {
-            title: "Himalayan Hills",
+            title: "Mero Krishi",
             img: meroKrishi,
             link: "https://merokrishi.com/"
-        }]
+        },
+        {
+            title: "Dursikshya",
+            img: Dursikshya,
+            link: "https://dursikshya.edu.np/for-university"
+        },
+
+
+    ]
     return (
         <>
             <div className="lg:hidden">
