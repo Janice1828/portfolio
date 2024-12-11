@@ -8,7 +8,7 @@ import BHSuppliers from "../assets/bh-suppliers.png";
 import Himalayanhills from "../assets/himalayanhills-logo.png"
 import Header from '../components/Header';
 import meroKrishi from "../assets/merokrishi.png"
-import Possystem from "../assets/possystem.png"
+import Possystem from "../assets/pos-system.webp"
 import Lawnella from "../assets/lawnella.jpg"
 import Instagram from "../assets/instagram.webp"
 import Dursikshya from "../assets/Dursikshya.png"
