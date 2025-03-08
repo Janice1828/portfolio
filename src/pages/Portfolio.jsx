@@ -44,7 +44,7 @@ const Portfolio = () => {
         {
             title: "Instagram Clone",
             img: Instagram,
-            link: "https://instagram-clone-wine-nine.vercel.app/index.html/"
+            link: "https://instagram-clone-one-vert.vercel.app/"
             ,
             Note: "Not Responsive"
         }
